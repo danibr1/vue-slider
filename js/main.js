@@ -5,20 +5,17 @@
 const app = new Vue({
     el: '#app',
     data: {
+        title: 'THE CRYPTO WORLD',
         // IMAGES ARRAY
         photos: [
             './img/1.jpg',
             './img/2.jpg',
             './img/3.jpg',
-            './img/4.jpg'
+            './img/4.jpg',
         ],
+        
         // INITIAL INDEX
         indexPhoto: 0,
-        intervalID: 0,
-    },
-    created (){
-        // ISTANZA VUE
-        this.startLoop();
     },
     methods: {
         // CLICK PREV PHOTO
