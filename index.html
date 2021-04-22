@@ -25,7 +25,9 @@
     <!-- APP -->
     <div id="app">
         <h1>{{ title }}</h1>
-        <section class="slider">
+        <section 
+            class="slider"
+        >
             <!-- ARROW LEFT -->
             <div class="prev" @click="prevPhoto">
                 <div class="fas fa-arrow-left"></div>
@@ -40,14 +42,15 @@
             <div class="next" @click="nextPhoto">
                 <div class="fas fa-arrow-right"></div>
             </div>
-
+            
             <div class="nav">
                 <i
                     v-for="(photo, index) in photos"
                     class="fas fa-circle"
-                    :class="{ active: index == indexPhoto}"
+                    :class="{ active: index == indexPhoto }"
                     @click="setPhoto(index)"              
                 ></i>
+                
             </div>
 
         </section>
