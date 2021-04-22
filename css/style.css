@@ -10,7 +10,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background: rgb(0,30,154);
-    background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(76,0,197,1) 67%);
+    background: linear-gradient(0deg, rgb(0, 30, 154) 0%, rgb(104, 28, 225) 45%);
     text-align: center;
     height: 100vh;
 }
@@ -26,6 +26,7 @@ h1{
 *****************************************/
 .slider {
     position: relative;
+    outline: none;
     width: 1170px;
     margin: 0 auto;
 }
@@ -63,7 +64,7 @@ h1{
     background: rgba(0, 0, 0, .7);
     border-radius: 50%;
     cursor: pointer;
-    transition: background .4s;
+    transition: background .3s;
 }
 
 /* Position arrow prev */
@@ -103,7 +104,7 @@ h1{
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.377);
     cursor: pointer;
-    transition: color .4s;
+    transition: color .3s;
 }
 
 .nav i:hover{
